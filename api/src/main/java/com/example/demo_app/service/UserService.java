@@ -16,6 +16,10 @@ public class UserService {
 
     public List<User> getAllUsers() {
         return userRepository.findAll();
+        // return List.of(
+        //     new User(1L, "John Doe", "john.doe@example.com"),
+        //     new User(2L, "Jane Smith", "jane.smith@example.com")
+        // );
     }
 
     public User saveUser(User user) {
